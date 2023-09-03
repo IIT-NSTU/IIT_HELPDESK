@@ -83,7 +83,7 @@ public class ClientHandler implements Runnable{
                 } catch (IOException e) {
                     closeEverything(s, bufferedReader, bufferedWriter);
                 }
-                break; // Only send the message to the intended recipient
+                break;
             }
         }
     }
@@ -100,7 +100,6 @@ public class ClientHandler implements Runnable{
                 fileData.append(System.lineSeparator());
             }
 
-            // Find the recipient's client handler
             for (ClientHandler clientHandler : clientHandlers) {
                 if (clientHandler.clientUsername.equals(recipientUsername)) {
                     clientHandler.bufferedWriter.write("(File) " + clientUsername + " sent a file: " + fileName);

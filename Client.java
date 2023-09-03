@@ -186,7 +186,7 @@ public class Client {
         }
 
         if (token) {
-            Socket socket = new Socket("192.168.0.193", 1234);
+            Socket socket = new Socket("192.168.132.28", 1234);
             Client client = new Client(socket, username);
             client.listenMessage();
             client.sendMessage();

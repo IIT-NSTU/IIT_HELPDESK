@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SPL_PROJECT">
+    <output-path>$PROJECT_DIR$/out/artifacts/SPL_PROJECT</output-path>
+    <root id="archive" name="SPL_PROJECT.jar">
+      <element id="module-output" name="new" />
+    </root>
+  </artifact>
+</component>
